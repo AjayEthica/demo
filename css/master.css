@@ -1,5 +1,5 @@
  #logox{  
-   margin-top:10px; 
+   margin-top:5px; 
    font: 25px sans-serif;
    color: #333;
 } 
@@ -13,7 +13,7 @@ a:hover{
 .form-container{
 	position: relative;
 	background: #FFF;
-	padding: 38px;
+	padding: 37px;
 	padding-left: 150px;
 	padding-right: 100px;
 	border-top-left-radius: 10%;
@@ -36,8 +36,8 @@ h2{
 	margin:11%;
 }
 h1{
-	font: 80px sans-serif;
-	margin: 38px 55px 0;
+	font: 75px sans-serif;
+	margin: 35px 55px 0;
 	color:#FFF;
 }
 #boy-x{
@@ -46,7 +46,7 @@ h1{
 	margin-left:20%;
 	pointer-events: none;
 }
-.form-control input[type=text],input[type=password],input[type=email],input[type=tel]{
+.form-control ,input[type=text],input[type=password],input[type=email],input[type=tel]{
 
   border: 0;
   outline: 0;
