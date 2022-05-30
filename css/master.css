@@ -1,20 +1,55 @@
+ #logox{  
+   margin-top:10px; 
+} 
+
 .form-container{
 	position: relative;
-	top: 20px;
 	background: #FFF;
-	padding: 20px;
-	border-radius: 10px;
+	padding: 38px;
+	padding-left: 150px;
+	padding-right: 100px;
+	border-top-left-radius: 10%;
+	border-bottom-left-radius: 10%;
 	display: block;
 	box-shadow: 0px 0px 0px 0.2px #000;
 }
-.bg{
-	background: #FFF;
-}
-
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #FF9900 !important;
+    background-color: #22FBAF !important;
+    margin: 30px 0 !important;
+    min-width: 176px !important;
+    line-height: 1.1875rem !important;
+    padding: 9px 1rem 11px !important;
+    border-radius: 0.5rem !important;
 }
-.now-image{margin-top: 50px;}
+body{
+	background-color:  #22FBAF;
+}
+h2{
+	margin:11%;
+}
+h1{
+	font: 80px sans-serif;
+	margin: 38px 55px 0;
+	color:#FFF;
+}
+#boy-x{
+	position:absolute;
+	z-index:1;
+	margin-left:20%;
+	pointer-events: none;
+}
+.form-control input[type=text],input[type=password],input[type=email],input[type=tel]{
+
+  border: 0;
+  outline: 0;
+  padding: 0px 15px;
+  color: #3b3331;
+  margin-top:30px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid;
+  /*font: 20px/2.5 sans-serif; */
+}
 
 @media (max-width:320px)  { .now-image{ display: none;}/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 @media (max-width:480px)  { .now-image{ display: none;}/* smartphones, Android phones, landscape iPhone */ }
