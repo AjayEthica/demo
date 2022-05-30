@@ -1,6 +1,14 @@
  #logox{  
    margin-top:10px; 
+   font: 25px sans-serif;
+   color: #333;
 } 
+span{
+	color:#FFF;
+}
+a:hover{
+    text-decoration: none;
+}
 
 .form-container{
 	position: relative;
