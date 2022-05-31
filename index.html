@@ -3,22 +3,24 @@
    <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
+      <meta name="description" content="Hiresity | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
+
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="css/master.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
       <link rel="icon" type="image/png" href="img/home.png">
-      <title>Hiresity Signup</title>
+      <title>Sign Up | Hiresity</title>
    </head>
    <body>
       <section class="container-fluid">
          <section class="row justify-content-center">
             <section class="now-image col-xs-10 col-sm-4 col-md-4 col-lg-4">
                <a href="#">
-                  <div class="font-weight-bold" id="logox"> <span>Hire</span>sity</div>
+                  <div class="font-weight-bold" id="logox"> <span id="mainspan">Hire</span>sity</div>
                </a>
                <h1 class="font-weight-bold">Hire NOW</h1>
                <img id="boy-x" width="90%" src="img/home.png" alt="Hiresity"> 
@@ -26,20 +28,27 @@
             <section style="padding-right: 0px;padding-left: 0px;" class="col-sm-8 col-md-8 col-lg-8">
                <form class="form-container">
                   <h2 class="text-center font-weight-bold">Create Account</h2>
-                  <div class="mb-3">
-                     <input type="text" placeholder="Full Name" class="form-control" id="name">
+                  <div class="field">
+                     <input type="text" class="form-control" id="name">
+                     <label>Full Name</label>
                   </div>
-                  <div class="mb-3">
-                     <input type="email" placeholder="Business Email" class="form-control" id="email">
+                  <div class="field">
+                     <input type="email" class="form-control" id="email">
+                     <label>Business Email</label>
                   </div>
-                  <div class="mb-3">
-                     <input type="tel" placeholder="Phone Number" class="form-control" id="phone">
+                  <div class="field">
+                  	 <input type="hidden" name="phone[1][type]" class="type-input" value="" />
+                     <input type="tel" class="form-control" id="phone">
+                     <label>Phone Number</label>
                   </div>
-                  <div class="mb-3">
-                     <input type="text" placeholder="Company Name" class="form-control" id="cname">
+                  <div class="field">
+                     <input type="text" class="form-control" id="cname">
+                     <label>Company Name</label>
                   </div>
-                  <div class="mb-3">
-                     <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+                  <div class="field">
+                  	 
+                     <input type="password" class="form-control" id="password">
+                     <label>Password</label>
                   </div>
                   <button type="submit" class="btn btn-primary btn-block font-weight-bold">Sign Up</button>
                   Already have an account?
@@ -50,6 +59,18 @@
             </section>
          </section>
       </section>
+      <script>
+         document.addEventListener('input', function(event) {
+         if (event.target.nodeName && event.target.nodeName === "INPUT") {
+         if (event.target.value) {
+         event.target.setAttribute('filled', 'true')
+         } else {
+         event.target.removeAttribute('filled')
+         
+         }
+         }
+         })
+      </script>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
