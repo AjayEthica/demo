@@ -27,14 +27,6 @@ input:focus ~ label{
   box-shadow: none;
 }
 
-#logox{  
-   margin-top:5px; 
-   font: 25px sans-serif;
-   color: #333;
-} 
-#mainspan{
-	color:#FFF;
-}
 a:hover{
     text-decoration: none;
 }
